@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="css.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <button type="button" name="buttonprimary" class="btn btn-primary">Button</button>
+  <button type="button" name="butonloading" class="btn btn-default" data-somestringvalue-text="Loading Finished" autocomplete="off">Load Button</button>
+  <button type="button" onclick="myfunc()" name="changebackgroundcolor">changebackgroundcolor</button>
+</div>
+<div class="container">
+  <button type="button" class="button1" onclick="func2()">Click</button>
+  <button class="button2" name="buttonxd" onclick="func3()">Button</button>
+</div>
+<div class="container">
+  <button class="btn"><i class="fa fa-download"></i> Download</button>
+</div>
+<div class="container">
+  <a href="#" class="previous">&laquo; Previous</a>
+  <a href="#" class="next">Next &raquo;</a>
+</div>
+<div class="container">
+  <p>Hello <span id="dots">...</span><span id="more">This button is Read more button.When you click you read more information</span></p>
+  <button onclick="func4()" id="myBtn">Read More</button>
+</div>
+
+<div class="container">
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Dropdown Button <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+    <button type="button" class="butn">Click Me</button>
+  </div>
+
+  <div id="ballMenuContainer">
+<div id="menuBall1" class="menuBall">
+  <a href="#" class="ball blueball">
+    <div class="menuText">
+        Party Info
+    </div>
+  </a>
+</div>
+
+<div id="menuBall2" class="menuBall">
+	<a href="#" class="ball redball">
+    <div class="menuText">
+        Directions
+    </div>
+  </a>
+</div>
+
+<div id="menuBall3" class="menuBall">
+	<a href="#" class="ball greenball">
+    <div class="menuText">
+        The Dairy
+    </div>
+  </a>
+</div>
+
+<div id="menuBall4" class="menuBall">
+	<a href="#" class="ball yellowball">
+    <div class="menuText">
+        Email Us
+    </div>
+  </a>
+</div>
+</div>
+</div>
+
+<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<div class="asasa btn-blob" id="lolo">&times;</div>
+
+<div class='buttons'>
+      <a href='#' title='Title 1'>
+        &#x2606;
+      </a>
+      <a class='active' href='#' title='Title 2'>
+        &#x262F;
+      </a>
+      <a href='#' title='Title 3'>
+        &#x2666;
+      </a>
+      <a href='#' title='Title 4'>
+        &#x267A;
+      </a>
+    </div>
+
+    <div class="pane">
+    	<h1>Simple Buttons</h1>
+    	<span class="button"><p>N</p></span>
+    	<span class="button"><p>C</p></span>
+    	<span class="button"><p>H</p></span>
+    	<span class="button"><p>S</p></span>
+    	<span class="button"><p>U</p></span>
+    	<span class="button"><p>A</p></span>
+    </div>a
+
+
+    <div class="wrap">
+  <a href="#" class="buttonqq"></a>
+</div>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+    $(".btn-primary:first").click(function(){
+        $(this).button('toggle');
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $(".btn-default").click(function(){
+        $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('somestringvalue');
+            $(this).dequeue();
+        });
+    });
+});
+</script>
+
+</body>
+</html>
